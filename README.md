@@ -15,19 +15,12 @@ I designed this Flask-based web service for the Pomelo coding exercise, allowing
    ```bash
    git clone https://github.com/doranchang/Pomelo
    cd Pomelo
-Install Dependencies: Make sure you have Python and pip installed. Then, install Flask:
+Install Python, pip, and Flask.
 
-bash
-Copy code
-pip install Flask
-Run the Application: Save the provided Flask code in a file named app.py, and run it:
-
-bash
-Copy code
 python app.py
 The application will start on http://127.0.0.1:5000.
 
-Testing the Service
+Testing:
 You can test the service using curl commands in your terminal. Here are some example commands to submit events and retrieve the summary:
 
 Submit Events

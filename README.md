@@ -26,7 +26,7 @@ I designed this Flask-based web service for the Pomelo coding exercise, allowing
    The application will start on http://127.0.0.1:5000.
 
 ## Testing:
-You can test the service using curl commands in your terminal. Here are some example commands to submit events:
+You can test the service using curl commands in your terminal. Here are some example commands to submit events as a JSON response:
 
    ```bash
    curl -X POST http://127.0.0.1:5000/submit_event \

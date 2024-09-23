@@ -26,88 +26,50 @@ You can test the service using curl commands in your terminal. Here are some exa
 Submit Events
 Submit Transaction Authorized Event:
 
-bash
-Copy code
-curl -X POST http://127.0.0.1:5000/submit_event \
--H "Content-Type: application/json" \
--d '{
-  "creditLimit": 1000,
-  "events": [
-    {
-      "eventType": "TXN_AUTHED",
-      "eventTime": 1,
-      "txnId": "t1",
-      "amount": 123
-    }
-  ]
-}'
-Submit Transaction Settled Event:
+   ```bash
+   curl -X POST http://127.0.0.1:5000/submit_event \
+   -H "Content-Type: application/json" \
+   -d '{
+     "creditLimit": 1000,
+     "eventType": "TXN_AUTHED",
+     "eventTime": 1,
+     "txnId": "t1",
+     "amount": 123
+   }'
+   
+   curl -X POST http://127.0.0.1:5000/submit_event \
+   -H "Content-Type: application/json" \
+   -d '{
+     "creditLimit": 1000,
+     "eventType": "TXN_SETTLED",
+     "eventTime": 2,
+     "txnId": "t1",
+     "amount": 456
+   }'
+   
+   curl -X POST http://127.0.0.1:5000/submit_event \
+   -H "Content-Type: application/json" \
+   -d '{
+     "creditLimit": 1000,
+     "eventType": "PAYMENT_INITIATED",
+     "eventTime": 3,
+     "txnId": "p1",
+     "amount": -456
+   }'
+   
+   curl -X POST http://127.0.0.1:5000/submit_event \
+   -H "Content-Type: application/json" \
+   -d '{
+     "creditLimit": 1000,
+     "eventType": "PAYMENT_POSTED",
+     "eventTime": 4,
+     "txnId": "p1",
+     "amount": 0
+   }'
 
-bash
-Copy code
-curl -X POST http://127.0.0.1:5000/submit_event \
--H "Content-Type: application/json" \
--d '{
-  "creditLimit": 1000,
-  "events": [
-    {
-      "eventType": "TXN_SETTLED",
-      "eventTime": 2,
-      "txnId": "t1",
-      "amount": 456
-    }
-  ]
-}'
-Submit Payment Initiated Event:
 
-bash
-Copy code
-curl -X POST http://127.0.0.1:5000/submit_event \
--H "Content-Type: application/json" \
--d '{
-  "creditLimit": 1000,
-  "events": [
-    {
-      "eventType": "PAYMENT_INITIATED",
-      "eventTime": 3,
-      "txnId": "p1",
-      "amount": -456
-    }
-  ]
-}'
-Submit Payment Posted Event:
 
-bash
-Copy code
-curl -X POST http://127.0.0.1:5000/submit_event \
--H "Content-Type: application/json" \
--d '{
-  "creditLimit": 1000,
-  "events": [
-    {
-      "eventType": "PAYMENT_POSTED",
-      "eventTime": 4,
-      "txnId": "p1",
-      "amount": 0
-    }
-  ]
-}'
-Get Summary
-To retrieve the summary of transactions after submitting events, use the following command:
 
-bash
-Copy code
-curl -X GET http://127.0.0.1:5000/get_summary
-Additional Endpoints
-Retrieve All Events:
 
-bash
-Copy code
-curl -X GET http://127.0.0.1:5000/all_events
-Clear All Events:
-
-bash
-Copy code
-curl -X DELETE http://127.0.0.1:5000/clear
 Conclusion
 This Pomelo coding exercise showcases a simple yet effective way to manage and summarize financial events using a RESTful API. You can expand or modify it to meet specific requirements or additional features as needed.

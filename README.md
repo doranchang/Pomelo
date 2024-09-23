@@ -13,8 +13,8 @@ I designed this Flask-based web service for the Pomelo coding exercise, allowing
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/doranchang/Pomelo
+   cd Pomelo
 Install Dependencies: Make sure you have Python and pip installed. Then, install Flask:
 
 bash

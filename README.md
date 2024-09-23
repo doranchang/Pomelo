@@ -67,9 +67,5 @@ Submit Transaction Authorized Event:
      "amount": 0
    }'
 
-
-
-
-
-Conclusion
+## Conclusion
 This Pomelo coding exercise showcases a simple yet effective way to manage and summarize financial events using a RESTful API. You can expand or modify it to meet specific requirements or additional features as needed.

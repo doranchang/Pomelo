@@ -21,10 +21,7 @@ python app.py
 The application will start on http://127.0.0.1:5000.
 
 Testing:
-You can test the service using curl commands in your terminal. Here are some example commands to submit events and retrieve the summary:
-
-Submit Events
-Submit Transaction Authorized Event:
+You can test the service using curl commands in your terminal. Here are some example commands to submit events:
 
    ```bash
    curl -X POST http://127.0.0.1:5000/submit_event \
@@ -66,6 +63,13 @@ Submit Transaction Authorized Event:
      "txnId": "p1",
      "amount": 0
    }'
+```
+To retrieve a summary of the resulting available credit, payable balance, and pending+settled transactions:
+curl -X GET http://127.0.0.1:5000/get_summary
 
-## Conclusion
-This Pomelo coding exercise showcases a simple yet effective way to manage and summarize financial events using a RESTful API. You can expand or modify it to meet specific requirements or additional features as needed.
+To see all previously submitted events:
+curl -X GET http://127.0.0.1:5000/all_events
+
+To clear all previously submitted events:
+curl -X DELETE http://127.0.0.1:5000/clear
+

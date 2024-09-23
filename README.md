@@ -81,3 +81,9 @@ To clear all previously submitted events:
 ```bash
 curl -X DELETE http://127.0.0.1:5000/clear
 ```
+
+<img width="566" alt="Screenshot 2024-09-22 at 8 08 47 PM" src="https://github.com/user-attachments/assets/990f02e0-ab9b-4fdd-b91f-9636fed7def8">
+<img width="561" alt="Screenshot 2024-09-22 at 8 09 26 PM" src="https://github.com/user-attachments/assets/5229d2be-4047-43f3-a1e2-4bfa441f7fe1">
+<img width="561" alt="Screenshot 2024-09-22 at 8 09 46 PM" src="https://github.com/user-attachments/assets/75a6d72f-3a8f-4b21-8b39-1423b4835259">
+<img width="562" alt="Screenshot 2024-09-22 at 8 10 14 PM" src="https://github.com/user-attachments/assets/8fa658a6-4034-49af-830d-84c5ccce74ec">
+

@@ -15,10 +15,15 @@ I designed this Flask-based web service for the Pomelo coding exercise, allowing
    ```bash
    git clone https://github.com/doranchang/Pomelo
    cd Pomelo
-Install Python, pip, and Flask.
+   ```
+2. **Install Python, pip, and Flask**:
+   Install Python, pip, and Flask.
 
-python app.py
-The application will start on http://127.0.0.1:5000.
+3. **Start the server**:
+   ```bash
+   python app.py
+   ```
+   The application will start on http://127.0.0.1:5000.
 
 Testing:
 You can test the service using curl commands in your terminal. Here are some example commands to submit events:

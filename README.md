@@ -70,11 +70,14 @@ You can test the service using curl commands in your terminal. Here are some exa
    }'
 ```
 To retrieve a summary of the resulting available credit, payable balance, and pending+settled transactions:
+```bash
 curl -X GET http://127.0.0.1:5000/get_summary
-
+```
 To see all previously submitted events:
+```bash
 curl -X GET http://127.0.0.1:5000/all_events
-
+```
 To clear all previously submitted events:
+```bash
 curl -X DELETE http://127.0.0.1:5000/clear
-
+```

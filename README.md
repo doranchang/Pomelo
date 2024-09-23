@@ -26,7 +26,7 @@ I designed this Flask-based web service for the Pomelo coding exercise, allowing
    The application will start on http://127.0.0.1:5000.
 
 ## Testing:
-You can test the service using curl commands in your terminal. Here are some example commands to submit events as a JSON response:
+You can test the service using curl commands in your terminal. Here are some example commands to submit events:
 
    ```bash
    curl -X POST http://127.0.0.1:5000/submit_event \
@@ -69,7 +69,7 @@ You can test the service using curl commands in your terminal. Here are some exa
      "amount": 0
    }'
 ```
-To retrieve a summary of the resulting available credit, payable balance, and pending+settled transactions:
+To retrieve a summary of the resulting available credit, payable balance, and pending+settled transactions as a JSON response:
 ```bash
 curl -X GET http://127.0.0.1:5000/get_summary
 ```

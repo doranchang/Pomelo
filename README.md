@@ -1,6 +1,6 @@
 # Pomelo Event Summary Service
 
-This Flask-based web service is designed for the Pomelo coding exercise, allowing you to submit financial events and retrieve a summary of transactions. It provides endpoints for submitting events, getting a summary, retrieving all stored events, and clearing the stored data.
+I designed this Flask-based web service for the Pomelo coding exercise, allowing you to submit financial events and retrieve a summary of transactions. It provides endpoints for submitting events, getting a summary, retrieving all stored events, and clearing the stored data.
 
 ## Features
 
